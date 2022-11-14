@@ -1,0 +1,151 @@
+@media (max-width: 1100px) {
+  .top-nav {
+    width: 100% !important;
+
+    .brand-name  {
+      display: block !important;
+    }
+
+    .toggler {
+      display: flex !important;
+    }
+
+    .user-info {
+      display: none !important; 
+    }
+
+    &.active-top-nav {
+      width: 100% !important;
+    }
+  }
+
+  .side-nav {
+    width: 100% !important;
+    height: 100vh !important;
+    left: -100%;
+
+    .user-info {
+      display: flex !important;
+    }
+
+    .side-nav-data  {
+      width: 300px !important;
+      padding-top: 20px;
+      left: -100%;
+      transition: all .3s linear;
+    }
+
+    .logo-contain {
+      display: none !important;
+    }
+
+    .overlay {
+      display: block;
+      opacity: 0;
+      height: 100%;
+      visibility: hidden;
+    }
+
+    .close-nav {
+      display: flex !important;
+    }
+
+    &.active-side-nav {
+      width: 100% !important;
+      left: 0px;
+
+      .overlay {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .brand-name {
+        display: block;
+      }
+  
+      .brand-icon {
+        display: none;
+      }
+
+      .side-nav-data {
+        left: 0px;
+        padding-top: 60px;
+      }
+
+      .seprate {
+        border: 0px;
+        
+        span {
+          display: block;
+        }
+      }
+
+      .nav-link {
+        width: 100%;
+        border-radius: 50px !important;
+        justify-content: flex-start !important;
+        span,
+        &::before {
+          display: block !important;
+        }
+
+        img {
+          margin-inline-end: 15px !important;
+        }
+      }
+    }
+  }
+
+  .main-contain {
+    padding-inline-start: 0px;
+
+    &.active-main {
+      padding-inline-start: 0px !important;
+    }
+
+    .copyrights {
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+
+      p {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .user-profile-card {
+    padding: 30px 25px !important;
+  }
+
+  .prepare-box {
+    .flex-data {
+      flex-direction: column;
+      justify-content: flex-start !important;
+      align-items: flex-start !important;
+      align-content: flex-start !important;
+      .heading {
+        margin-bottom: 15px;
+      }
+    }
+
+    .subjects-contain {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+
+      .subject-list {
+        width: 100% !important;
+        flex-direction: row !important;
+        justify-content: center !important;
+        padding-top: 20px;
+        padding-inline-start: 0px !important;
+        border-top: 1px solid rgba($color: #2E3192, $alpha: 0.06);
+        border-inline-start: 0px !important;
+        margin-top: 20px;
+      }
+    }
+  }
+
+}

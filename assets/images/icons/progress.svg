@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="progress" transform="translate(-116 -171)">
+    <g id="timer_bulk" data-name="timer/bulk" transform="translate(116 171)">
+      <g id="vuesax_bulk_timer" data-name="vuesax/bulk/timer">
+        <g id="timer">
+          <path id="Vector" d="M12.949,7.68A3.631,3.631,0,0,1,9.549,10h-5.9A3.635,3.635,0,0,1,1.2,3.67L5.249,0h2.71L12,3.67A3.635,3.635,0,0,1,12.949,7.68Z" transform="translate(5.401 12)" opacity="0.4"/>
+          <path id="Vector-2" data-name="Vector" d="M4.32,1.36H.68A.68.68,0,1,1,.68,0H4.32A.681.681,0,0,1,5,.68.687.687,0,0,1,4.32,1.36Z" transform="translate(9.5 16.78)"/>
+          <path id="Vector-3" data-name="Vector" d="M12.944,2.32A3.631,3.631,0,0,0,9.544,0h-5.9A3.63,3.63,0,0,0,1.2,6.33L5.244,10h2.71l4.04-3.67A3.635,3.635,0,0,0,12.944,2.32ZM8.414,5.23H4.774a.68.68,0,1,1,0-1.36h3.64a.68.68,0,1,1,0,1.36Z" transform="translate(5.406 2)"/>
+          <path id="Vector-4" data-name="Vector" d="M0,0H24V24H0Z" fill="none" opacity="0"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

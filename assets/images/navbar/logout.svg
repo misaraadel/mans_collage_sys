@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Group_4276" data-name="Group 4276" transform="translate(-1159 -92)">
+    <g id="logout_bulk" data-name="logout/bulk" transform="translate(1159 92)">
+      <g id="vuesax_bulk_logout" data-name="vuesax/bulk/logout">
+        <g id="logout">
+          <path id="Vector" d="M10,0a.86.86,0,0,1,.86.86V19.15a.86.86,0,0,1-.86.86,9.565,9.565,0,0,1-10-10A9.579,9.579,0,0,1,10,0Z" transform="translate(3.24 2)" fill="#dd2034" opacity="0.4"/>
+          <path id="Vector-2" data-name="Vector" d="M12.66,3.068,9.82.218a.75.75,0,0,0-1.06,1.06l1.56,1.56H.75a.75.75,0,0,0,0,1.5h9.57L8.76,5.9a.754.754,0,0,0,0,1.06.748.748,0,0,0,1.06,0l2.84-2.85A.73.73,0,0,0,12.66,3.068Z" transform="translate(7.88 8.472)" fill="#dd2034"/>
+          <path id="Vector-3" data-name="Vector" d="M0,0H24V24H0Z" fill="none" opacity="0"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
