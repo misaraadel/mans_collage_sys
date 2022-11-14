@@ -98,6 +98,7 @@
 
   .main-contain {
     padding-inline-start: 0px;
+    padding-inline-end: 0px !important;
 
     &.active-main {
       padding-inline-start: 0px !important;
@@ -119,11 +120,14 @@
   }
 
   .prepare-box {
+    padding: 28px 16px !important;
+
     .flex-data {
       flex-direction: column;
       justify-content: flex-start !important;
       align-items: flex-start !important;
       align-content: flex-start !important;
+
       .heading {
         margin-bottom: 15px;
       }
@@ -144,6 +148,10 @@
         border-top: 1px solid rgba($color: #2E3192, $alpha: 0.06);
         border-inline-start: 0px !important;
         margin-top: 20px;
+
+        li a {
+          width: 107px !important;
+        }
       }
     }
   }

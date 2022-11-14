@@ -1040,7 +1040,7 @@ ul {
   display: none;
 }
 .top-nav .contain .brand-name img {
-  width: 180px;
+  width: 150px;
   height: 30px;
   -o-object-fit: contain;
      object-fit: contain;
@@ -1869,6 +1869,8 @@ ul {
   .main-contain {
     -webkit-padding-start: 0px;
             padding-inline-start: 0px;
+    -webkit-padding-end: 0px !important;
+            padding-inline-end: 0px !important;
   }
   .main-contain.active-main {
     -webkit-padding-start: 0px !important;
@@ -1884,6 +1886,9 @@ ul {
   }
   .user-profile-card {
     padding: 30px 25px !important;
+  }
+  .prepare-box {
+    padding: 28px 16px !important;
   }
   .prepare-box .flex-data {
     flex-direction: column;
@@ -1911,5 +1916,8 @@ ul {
     -webkit-border-start: 0px !important;
             border-inline-start: 0px !important;
     margin-top: 20px;
+  }
+  .prepare-box .subjects-contain .subject-list li a {
+    width: 107px !important;
   }
 }/*# sourceMappingURL=style.css.map */
