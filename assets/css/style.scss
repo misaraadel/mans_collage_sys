@@ -91,6 +91,7 @@
   .copyrights {
     width: 100%;
     padding: 21px 0px;
+    margin-top: 30px !important;
     border-top: 1px solid rgba($color: #2E3192, $alpha: 0.06);
     display: flex;
     align-items: center;
@@ -222,13 +223,11 @@
 
   .parent-info {
     width: 100%;
-    padding: 17px 24px;
+    padding: 17px 0px;
     position: relative;
     z-index: 9;
     background-color: var(--light-color);
-    border-radius: 10px;
     transition: all .3s linear;
-    margin-bottom: 16px;
 
     &:last-child {
       margin-bottom: 0px;
@@ -253,14 +252,12 @@
       height: 24px;
       background: url('../images/icons/top-arrow.svg') center / contain no-repeat;
       top: 17px;
-      right: 24px;
+      right: 0px;
       z-index: -1;
       filter: var(--secondary-filter);
     }
 
     &:hover {
-      transform: translateY(-10px);
-
       &::after {
         animation: translateY 1s linear infinite;
       }
@@ -367,37 +364,263 @@
 
             &:hover {
               transform: translateY(-5px);
+              background-color: var(--primary-color);
+              color: var(--light-color);
             }
           }
 
           &:first-child {
             a {
               background-color: rgba($color: #2E3192, $alpha: 0.10);
+              
+              &:hover {
+                background-color: var(--primary-color);
+              }
             }
           }
   
           &:nth-child(2) {
             a {
               background-color: rgba($color: #DD2034, $alpha: 0.10);
+
+              &:hover {
+                background-color: var(--secondary-color);
+              }
             }
           }
   
           &:nth-child(3) {
             a {
               background-color: rgba($color: #55BF2F, $alpha: 0.10);
+
+              &:hover {
+                background-color: #55BF2F;
+              }
             }
           }
   
           &:nth-child(4) {
             a {
               background-color: rgba($color: #249894, $alpha: 0.10);
+
+              &:hover {
+                background-color: #249894;
+              }
             }
           }
   
           &:last-child {
             a {
               background-color: rgba($color: #21917E, $alpha: 0.10);
+
+              &:hover {
+                background-color: #21917E;
+              }
             }
+          }
+        }
+      }
+    }
+  }
+
+  .card {
+    border: 0px;
+    border-radius: 10px !important;
+    padding: 0px 24px;
+    margin-bottom: 16px;
+
+    .card-header {
+      padding: 0px;
+      background-color: transparent;
+
+      .btn  {
+        width: 100%;
+        padding: 0px;
+        text-align: start;
+
+        &[aria-expanded="true"] {
+          .parent-info {
+            &::after {
+              transform: rotate(180deg);
+              animation: translateYReverse 1s linear infinite;
+            }
+
+            &:hover {
+              &::after {
+                transform: rotate(180deg);
+                animation: translateYReverse 1s linear infinite;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .card-body {
+      padding: 17px 0px;
+      border-top: 1px solid rgba($color: #2C3691, $alpha: 0.10);
+
+      .contact-list {
+        width: 100%;
+
+        li {
+          width: 100%;
+          margin-bottom: 10px;
+
+          &:last-child {
+            margin-bottom: 0px;
+          }
+
+          a {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            align-content: center;
+
+            img {
+              width: 24px;
+              height: 24px;
+              object-fit: contain;
+              margin-inline-end: 10px;
+              filter: var(--gray-filter);
+            }
+
+            span {
+              @include font13regularGray();
+            }
+
+            &:hover {
+              img {
+                animation: tada .3s linear;
+                filter: var(--primary-filter);
+              }
+
+              span {
+                color: var(--primary-color)
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*start time table page*/
+.time-table {
+  .heading {
+    @include font18BoldDark();
+    margin-bottom: 30px;
+  }
+
+  .table-responsive {
+    width: 100%;
+    
+    table {
+      width: 100%;
+      border-radius: 10px;
+      overflow: hidden;
+
+      th {
+        background-color: #3074A8 !important;
+        vertical-align: middle;
+        font-size: 14px;
+        font-weight: 700;
+        color: var(--light-color);
+        padding: 15px 14px;
+        text-align: center;
+        border-inline-end: 1px solid rgba($color: #FFF, $alpha: 0.10)
+      }
+
+      .weekend {
+        background-color: var(--secondary-color);
+        font-size: 14px;
+        font-weight: 700;
+        color: var(--light-color);
+        vertical-align: middle;
+        text-align: center;
+      }
+
+      tr {
+        border-block-end: 1px solid rgba($color: #FFF, $alpha: 0.10);
+      }
+
+      tbody tr {
+        &:last-child {
+          border-block-end: 0px !important;
+        }
+
+        th {
+          width: 120px;
+        }
+      }
+
+      td {
+        width: 100px;
+        padding: 20px 11px;
+        border-inline-end: 1px solid rgba($color: #DD2034, $alpha: 0.06);
+
+        &:last-child {
+          border-inline-end: 0px !important;
+        }
+
+        &.break {
+          background-color: var(--gray-color);
+          color: var(--light-color);
+          font-size: 14px;
+          text-align: center;
+          vertical-align: middle;
+          font-weight: 700;
+        }
+
+        &.red {
+          background-color: rgba($color: #CCD82A, $alpha: 0.06);
+        }
+
+        &.blue {
+          background-color: rgba($color: #2C3691, $alpha: 0.06);
+        }
+
+        &.empty {
+          background-color: var(--light-color);
+        }
+
+        span {
+          display: block;
+          text-align: center;
+          
+          &.subject-name {
+            @include font13regularGray();
+            font-weight: 700;
+            color: var(--dark-color);
+            margin-bottom: 2px;
+          }
+
+          &.class-code, &.time, &.teacher-name {
+            font-size: 10px !important;
+            font-weight: 500;
+          }
+
+          &.class-code {
+            color: var(--secondary-color);
+            margin-bottom: 2px;
+          }
+
+          &.time {
+            @include font13regularGray();
+            margin-bottom: 2px;
+          }
+
+          &.teacher-name {
+            color: var(--dark-color);
+          }
+        }
+
+        &.dark-blue {
+          background-color: var(--primary-color);
+
+          span {
+            color: var(--light-color) !important;
           }
         }
       }

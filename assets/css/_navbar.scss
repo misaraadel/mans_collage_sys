@@ -167,6 +167,7 @@
     overflow-y: scroll;
     overflow-x: hidden;
     padding: 24px;
+    z-index: 9;
     background-color: var(--primary-color);
 
     &::-webkit-scrollbar-thumb,
@@ -226,11 +227,14 @@
       object-fit: contain;
     }
 
-    .brand-icon img {
-      width: 50px;
-      height: 30px;
-      object-fit: contain;
+    .brand-icon {
       display: none;
+
+      img {
+        width: 50px;
+        height: 30px;
+        object-fit: contain;
+      }
     }
 
     .toggler {
@@ -422,7 +426,7 @@
     }
 
     .brand-icon {
-      display: block;
+      display: block !important;
     }
 
     .nav-item {

@@ -156,4 +156,22 @@
     }
   }
 
+  .time-table {
+    .table-responsive  {
+      &::-webkit-scrollbar, 
+      &::-webkit-scrollbar-track  {
+        height: 10px !important;
+      }
+      
+      table {
+        tbody tr th {
+          min-width: 120px;
+        }
+  
+        td {
+          min-width: 100px;
+        }
+      }
+    }
+  }
 }
