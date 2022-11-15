@@ -1,5 +1,5 @@
 
-<p align="center"><a href="https://misaraadel.github.io/mans_collage_sys/" target="_blank"><img src="https://misaraadel.github.io/mans_collage_sys/assets/images/navbar/logo.webp" width="400"></a></p>
+<p align="center"><a href="https://misaraadel.github.io/mans_collage_sys/" target="_blank"><img src="https://misaraadel.github.io/mans_collage_sys/assets/images/navbar/logo.webp" width="350"></a></p>
 
 Design Made by [Misara Hammed](https://github.com/misaraadel) for [technoraft](https://technoraft.com/)
 
