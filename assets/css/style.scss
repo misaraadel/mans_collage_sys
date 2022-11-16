@@ -200,10 +200,6 @@
         margin-inline-end: 10px;
         margin-bottom: 10px;
 
-        &:last-child {
-          margin-bottom: 0px;
-        }
-
         a {
           padding: 8px 18px;
 
@@ -542,7 +538,7 @@
       }
 
       tr {
-        border-block-end: 1px solid rgba($color: #FFF, $alpha: 0.10);
+        border-block-end: 1px solid rgba($color: #DD2034, $alpha: 0.06);
       }
 
       tbody tr {
@@ -559,6 +555,7 @@
         width: 100px;
         padding: 20px 11px;
         border-inline-end: 1px solid rgba($color: #DD2034, $alpha: 0.06);
+        transition: all .3s linear;
 
         &:last-child {
           border-inline-end: 0px !important;
@@ -575,10 +572,18 @@
 
         &.red {
           background-color: rgba($color: #CCD82A, $alpha: 0.06);
+
+          &:hover {
+            transform: scale(1.2);
+          }
         }
 
         &.blue {
           background-color: rgba($color: #2C3691, $alpha: 0.06);
+
+          &:hover {
+            transform: scale(1.2);
+          }
         }
 
         &.empty {
@@ -621,6 +626,10 @@
 
           span {
             color: var(--light-color) !important;
+          }
+
+          &:hover {
+            transform: scale(1.2);
           }
         }
       }

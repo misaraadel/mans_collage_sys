@@ -1,3 +1,10 @@
+@media (min-width: 1550px) {
+  .main-profile .prepare-box .subjects-contain .subject-list li a {
+    width: 180px;
+    height: 150px;
+  }
+}
+
 @media (max-width: 1100px) {
   .top-nav {
     width: 100% !important;
