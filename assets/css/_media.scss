@@ -162,21 +162,108 @@
       }
     }
   }
-
-  .time-table {
-    .table-responsive  {
-      &::-webkit-scrollbar, 
-      &::-webkit-scrollbar-track  {
-        height: 10px !important;
+  .table-responsive  {
+    &::-webkit-scrollbar, 
+    &::-webkit-scrollbar-track  {
+      height: 10px !important;
+    }
+    
+    table {
+      tbody tr th {
+        min-width: 120px;
       }
-      
-      table {
-        tbody tr th {
-          min-width: 120px;
-        }
+
+      td {
+        min-width: 105px;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .absence {
+    .flex-data {
+      flex-direction: column; 
+      justify-content: flex-start;
+      align-content: space-between;
+      align-items:flex-start;
   
-        td {
-          min-width: 100px;
+      .general-head {
+        margin-bottom: 10px;
+      }
+    }
+
+    th {
+      min-width: 140px !important;
+    }
+  }
+
+  .progress-contain .progress-data {
+    flex-direction: column !important;
+
+    &::after {
+      transform: rotate(180deg) !important;
+    }
+    
+    .button-list {
+      width: 100% !important;
+
+      &:first-child {
+        margin-bottom: 30px !important;
+      }
+
+      &:last-child {
+        margin-top: 30px !important;
+      }
+    }
+  }
+
+  .modal-dialog  {
+    max-width: 100% !important;
+    margin: 40px 0px 0px 0px!important;
+
+    .modal-body {
+      padding: 25px 15px !important;
+    }
+
+    .close-modal-icon {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+    }
+
+    .flex-data {
+      margin-bottom: 15px !important;
+      padding-bottom: 15px !important; 
+
+      .list {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+
+        li {
+          width: 100%;
+          margin-bottom: 10px;
+          margin-inline-end: 0px !important;
+        }
+      }
+    }
+    
+    .total-amount {
+      width: 100%;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      align-content: flex-start;
+
+      .flex-price {
+        width: 100%;
+        margin-bottom: 15px;
+        justify-content: space-between !important;
+
+        .contain {
+          margin: 0px !important;
         }
       }
     }

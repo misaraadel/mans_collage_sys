@@ -1,0 +1,9 @@
+<svg id="Vacation" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="vuesax_bulk_flash-circle" data-name="vuesax/bulk/flash-circle">
+    <g id="flash-circle">
+      <path id="Vector" d="M20,10A10,10,0,1,1,10,0,10,10,0,0,1,20,10Z" transform="translate(1.97 2)" opacity="0.4"/>
+      <path id="Vector-2" data-name="Vector" d="M7.249,4.8h-1.7V.835c0-.92-.5-1.11-1.11-.42L4,.915.279,5.145c-.51.58-.3,1.05.47,1.05h1.7v3.96c0,.92.5,1.11,1.11.42l.44-.5,3.72-4.23C8.229,5.265,8.019,4.8,7.249,4.8Z" transform="translate(8.001 6.505)"/>
+      <path id="Vector-3" data-name="Vector" d="M0,0H24V24H0Z" fill="none" opacity="0"/>
+    </g>
+  </g>
+</svg>
