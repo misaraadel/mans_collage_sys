@@ -146,7 +146,7 @@
           </li>
   
           <li class="nav-item">
-            <a href="progress.html" class="nav-link active">
+            <a href="progress.html" class="nav-link">
               <img src="assets/images/icons/progress.svg" loading="lazy" alt="" />
   
               <span>
@@ -156,7 +156,7 @@
           </li>
   
           <li class="nav-item">
-            <a href="grades.html" class="nav-link">
+            <a href="grades.html" class="nav-link active">
               <img src="assets/images/icons/grades.svg" loading="lazy" alt="" />
   
               <span>
@@ -202,54 +202,42 @@
 
     <main class="main-contain">
       <div class="container-fluid">
-        <section class="progress-contain">
+        <section class="grades">
           <div class="general-head">
             <h1>
-              Academic Year
-
-              <span>
-                ( 2022/2023 )
-              </span>
+              Academic Report
             </h1>
           </div>
 
-          <div class="progress-data">
-            <ul class="button-list">
+          <div class="student-grade">
+            <h2>
+              Lara Mohamed Soliman Elshamy
+            </h2>
+
+            <ul class="grade-list">
               <li>
-                <a href="#" class="active">
-                  Term 1
-                </a>
+                <span class="name">
+                  Grade :
+                </span>
+
+                <span class="data">
+                  Prim 4
+                </span>
               </li>
 
               <li>
-                <a href="#">
-                  Term 2
-                </a>
-              </li>
-            </ul>
+                <span class="name">
+                  Seating Number :
+                </span>
 
-            <ul class="button-list">
-              <li>
-                <a href="#" class="active">
-                  T1-Week 01
-                </a>
-              </li>
-
-              <li>
-                <a href="#">
-                  T1-Week 02
-                </a>
+                <span class="data">
+                  180 
+                </span>
               </li>
             </ul>
           </div>
 
-          <div class="general-head">
-            <h1>
-              Subjects Progress Data
-            </h1>
-          </div>
-
-          <div class="table-responsive mb-5">
+          <div class="table-responsive">
             <table>
               <thead>
                 <tr>
@@ -258,31 +246,11 @@
                   </th>
 
                   <th>
-                    Period
+                    Evaluation
                   </th>
 
-                  <th>
-                    Attendance
-                  </th>
-
-                  <th>
-                    Tools 
-                  </th>
-                  
-                  <th>
-                    H.W
-                  </th>
-
-                  <th>
-                    Quiz
-                  </th>
-
-                  <th>
-                    Progress
-                  </th>
-
-                  <th>
-                    Notes
+                  <th class="comments">
+                    Comment
                   </th>
                 </tr>
               </thead>
@@ -293,34 +261,12 @@
                     Arabic
                   </td>
 
-                  <td>
-                    p1
+                  <td class="blue">
+
                   </td>
 
                   <td>
-                    Attendant 
-                  </td>
-
-                  <td>
-                    committed
-                  </td>
-                  
-                  <td>
-                    committed
-                  </td>
-
-                  <td>
-                    9
-                  </td>
-
-                  <td>
-                    Excellent
-                  </td>
-
-                  <td>
-                    <a href="#">
-                      <img src="assets/images/icons/note.svg" loading="lazy" alt="" />
-                    </a>
+                    Distinguished Performance
                   </td>
                 </tr>
 
@@ -329,34 +275,12 @@
                     Arabic
                   </td>
 
-                  <td>
-                    p1
+                  <td class="yellow">
+
                   </td>
 
                   <td>
-                    Attendant 
-                  </td>
-
-                  <td>
-                    committed
-                  </td>
-                  
-                  <td>
-                    committed
-                  </td>
-
-                  <td>
-                    9
-                  </td>
-
-                  <td>
-                    Excellent
-                  </td>
-
-                  <td>
-                    <a href="#">
-                      <img src="assets/images/icons/note.svg" loading="lazy" alt="" />
-                    </a>
+                    Distinguished Performance
                   </td>
                 </tr>
 
@@ -365,34 +289,12 @@
                     Arabic
                   </td>
 
-                  <td>
-                    p1
+                  <td class="red">
+
                   </td>
 
                   <td>
-                    Attendant 
-                  </td>
-
-                  <td>
-                    committed
-                  </td>
-                  
-                  <td>
-                    committed
-                  </td>
-
-                  <td>
-                    9
-                  </td>
-
-                  <td>
-                    Excellent
-                  </td>
-
-                  <td>
-                    <a href="#">
-                      <img src="assets/images/icons/note.svg" loading="lazy" alt="" />
-                    </a>
+                    Distinguished Performance
                   </td>
                 </tr>
 
@@ -401,142 +303,78 @@
                     Arabic
                   </td>
 
-                  <td>
-                    p1
+                  <td class="green">
+
                   </td>
 
                   <td>
-                    Attendant 
-                  </td>
-
-                  <td>
-                    committed
-                  </td>
-                  
-                  <td>
-                    committed
-                  </td>
-
-                  <td>
-                    9
-                  </td>
-
-                  <td>
-                    Excellent
-                  </td>
-
-                  <td>
-                    <a href="#">
-                      <img src="assets/images/icons/note.svg" loading="lazy" alt="" />
-                    </a>
+                    Distinguished Performance
                   </td>
                 </tr>
               </tbody>
             </table>
           </div>
 
-          <div class="general-head">
-            <h1>
-              Behavior Situation
-            </h1>
-          </div>
+          <ul class="filter-colors">
+            <li>
+              <a href="#">
+                <div class="color green"></div>
 
-          <div class="table-responsive">
-            <table>
-              <thead>
-                <tr>
-                  <th>
-                    #
-                  </th>
+                <span>
+                  Distinguished Performance
+                </span>
+              </a>
+            </li>
 
-                  <th>
-                    Date
-                  </th>
+            <li>
+              <a href="#">
+                <div class="color red"></div>
 
-                  <th class="situation">
-                    Situation
-                  </th>
+                <span>
+                  Perfirms What Is Required Successfully
+                </span>
+              </a>
+            </li>
 
-                  <th>
-                    Subject 
-                  </th>
-                </tr>
-              </thead>
+            <li>
+              <a href="#">
+                <div class="color yellow"></div>
 
-              <tbody>
-                <tr>
-                  <td>
-                    01
-                  </td>
+                <span>
+                  Needs More Care
+                </span>
+              </a>
+            </li>
 
-                  <td>
-                    11-10-2022
-                  </td>
+            <li>
+              <a href="#">
+                <div class="color blue"></div>
 
-                  <td>
-                    الطالب(ة) ملتزم خلال هذه الفترة ولم يصدر منه أي مشكلات سلوكية 
-                  </td>
+                <span>
+                  Needs a Great deal of care and interest
+                </span>
+              </a>
+            </li>
+          </ul>
 
-                  <td>
-                    
-                  </td>
-                </tr>
+          <div class="comment">
+            <div class="image-content">
+              <img src="assets/images/icons/comment.svg" loading="lazy" alt="" />
+            </div>
 
-                <tr>
-                  <td>
-                    01
-                  </td>
+            <div class="contain">
+              <h3>
+                Comment
+              </h3>
 
-                  <td>
-                    11-10-2022
-                  </td>
+              <p class="desc">
+                The student passed and promoted to grade prim 5
+              </p>
 
-                  <td>
-                    الطالب(ة) ملتزم خلال هذه الفترة ولم يصدر منه أي مشكلات سلوكية 
-                  </td>
-
-                  <td>
-                    
-                  </td>
-                </tr>
-
-                <tr>
-                  <td>
-                    01
-                  </td>
-
-                  <td>
-                    11-10-2022
-                  </td>
-
-                  <td>
-                    الطالب(ة) ملتزم خلال هذه الفترة ولم يصدر منه أي مشكلات سلوكية 
-                  </td>
-
-                  <td>
-                    
-                  </td>
-                </tr>
-
-                <tr>
-                  <td>
-                    01
-                  </td>
-
-                  <td>
-                    11-10-2022
-                  </td>
-
-                  <td>
-                    الطالب(ة) ملتزم خلال هذه الفترة ولم يصدر منه أي مشكلات سلوكية 
-                  </td>
-
-                  <td>
-                    
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+              <p class="sub-desc">
+                Thanks and best wishes
+              </p>
+            </div>
           </div>
         </section>
 

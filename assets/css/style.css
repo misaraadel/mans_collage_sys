@@ -2336,6 +2336,16 @@ ul {
   left: calc(50% - 15px);
   filter: var(--secondary-filter);
 }
+.progress-contain .progress-data.flex-column-progress-data {
+  flex-direction: column;
+}
+.progress-contain .progress-data.flex-column-progress-data::after {
+  display: none;
+}
+.progress-contain .progress-data.flex-column-progress-data .button-list {
+  width: 100%;
+  margin-bottom: 20px;
+}
 .progress-contain .progress-data .button-list {
   width: 45%;
   height: 50px;
@@ -2388,6 +2398,69 @@ ul {
 .progress-contain .progress-data .button-list li a:hover::after, .progress-contain .progress-data .button-list li a:hover::before, .progress-contain .progress-data .button-list li a.active::after, .progress-contain .progress-data .button-list li a.active::before {
   width: 55%;
 }
+.progress-contain .progress-data .week-list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.progress-contain .progress-data .week-list li {
+  -webkit-margin-end: 14px;
+          margin-inline-end: 14px;
+}
+.progress-contain .progress-data .week-list li:last-child {
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+}
+.progress-contain .progress-data .week-list li a {
+  width: 170px;
+  height: 50px;
+  border-radius: 25px;
+  position: relative;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.progress-contain .progress-data .week-list li a::after, .progress-contain .progress-data .week-list li a::before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+  transition: all 0.3s linear;
+}
+.progress-contain .progress-data .week-list li a::after {
+  left: 0;
+}
+.progress-contain .progress-data .week-list li a::before {
+  right: 0px;
+}
+.progress-contain .progress-data .week-list li a:hover, .progress-contain .progress-data .week-list li a.active {
+  color: var(--light-color) !important;
+}
+.progress-contain .progress-data .week-list li a:hover::after, .progress-contain .progress-data .week-list li a:hover::before, .progress-contain .progress-data .week-list li a.active::after, .progress-contain .progress-data .week-list li a.active::before {
+  width: 55%;
+}
+.progress-contain .progress-data .week-list.danger-color li a {
+  background-color: rgba(221, 32, 52, 0.06);
+  color: var(--secondary-color);
+}
+.progress-contain .progress-data .week-list.danger-color li a::after, .progress-contain .progress-data .week-list.danger-color li a::before {
+  background-color: var(--secondary-color);
+}
+.progress-contain .progress-data .week-list.blue-color li a {
+  background-color: rgba(46, 49, 146, 0.06);
+  color: var(--primary-color);
+  width: 217px !important;
+}
+.progress-contain .progress-data .week-list.blue-color li a::after, .progress-contain .progress-data .week-list.blue-color li a::before {
+  background-color: var(--primary-color);
+}
 .progress-contain td {
   text-align: center;
 }
@@ -2400,6 +2473,21 @@ ul {
 }
 .progress-contain th.situation {
   min-width: 380px !important;
+}
+.progress-contain th.score {
+  width: 12%;
+}
+.progress-contain th.dark-blue {
+  background-color: #1A486B !important;
+}
+.progress-contain th.red-bk {
+  background-color: var(--secondary-color) !important;
+}
+.progress-contain .red {
+  background-color: rgba(221, 32, 52, 0.06);
+}
+.progress-contain .blue {
+  background-color: rgba(46, 49, 146, 0.06);
 }
 
 /*start subjects page*/
@@ -2665,6 +2753,200 @@ ul {
 }
 .unpaid .unpaid-box:hover h2 {
   color: var(--primary-color);
+}
+
+/*start grades page*/
+.grades th.comments {
+  min-width: 320px;
+}
+.grades td {
+  text-align: center;
+}
+.grades td.red {
+  background-color: rgba(221, 32, 52, 0.2);
+}
+.grades td.blue {
+  background-color: rgba(46, 49, 146, 0.2);
+}
+.grades td.green {
+  background-color: rgba(73, 152, 50, 0.2);
+}
+.grades td.yellow {
+  background-color: rgba(196, 221, 32, 0.2);
+}
+.grades .filter-colors {
+  width: 100%;
+  padding: 21px 0px 30px;
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: flex-start;
+  border-bottom: 1px solid rgba(46, 49, 146, 0.06);
+}
+.grades .filter-colors li {
+  -webkit-margin-end: 15px;
+          margin-inline-end: 15px;
+}
+.grades .filter-colors li:last-child {
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+}
+.grades .filter-colors li a {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.grades .filter-colors li a .color {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  -webkit-margin-end: 8px;
+          margin-inline-end: 8px;
+}
+.grades .filter-colors li a .color.green {
+  background-color: #499832;
+}
+.grades .filter-colors li a .color.blue {
+  background-color: var(--primary-color);
+}
+.grades .filter-colors li a .color.red {
+  background-color: var(--secondary-color);
+}
+.grades .filter-colors li a .color.gray {
+  background-color: var(--gray-color);
+}
+.grades .filter-colors li a .color.yellow {
+  background-color: #C4DD20;
+}
+.grades .filter-colors li a span {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--gray-color);
+  font-weight: 700;
+}
+.grades .comment {
+  width: 100%;
+  margin-top: 30px;
+  padding: 22px 24px;
+  background-color: var(--light-color);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  transition: all 0.3s linear;
+}
+.grades .comment .image-content {
+  width: 50px;
+  height: 50px;
+  outline: 1px solid var(--primary-color);
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  z-index: 9;
+}
+.grades .comment .image-content::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--light-color);
+  transform: scale(0);
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  z-index: -1;
+  transition: all 0.3s linear;
+}
+.grades .comment .image-content img {
+  width: 24px;
+  height: 24px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  filter: var(--light-fitler);
+}
+.grades .comment .contain {
+  width: calc(100% - 70px);
+}
+.grades .comment .contain h2 {
+  color: var(--primary-color);
+  font-size: 16px;
+  font-weight: 900;
+  margin: 0px;
+}
+.grades .comment .contain p {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--gray-color);
+}
+.grades .comment .contain p.desc {
+  color: var(--dark-color);
+  margin: 8px 0px;
+}
+.grades .comment .contain p.sub-desc {
+  color: var(--secondary-color);
+  margin: 0px;
+}
+.grades .comment:hover {
+  transform: translateY(-10px);
+}
+.grades .comment:hover .image-content::after {
+  transform: scale(1);
+}
+.grades .comment:hover .image-content img {
+  -webkit-animation: fadeInRight 0.3s linear both;
+          animation: fadeInRight 0.3s linear both;
+  filter: var(--primary-filter);
+}
+
+.student-grade {
+  width: 100%;
+  margin-bottom: 30px;
+  background-color: var(--secondary-color);
+  padding: 22px 24px;
+  border-radius: 10px;
+}
+.student-grade h2 {
+  font-size: 18px;
+  font-weight: 900;
+  color: var(--dark-color);
+  color: var(--light-color) !important;
+  margin-bottom: 8px;
+}
+.student-grade .grade-list {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+.student-grade .grade-list li {
+  padding: 0px 18px;
+}
+.student-grade .grade-list li:first-child {
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+  -webkit-border-end: 1px solid rgba(255, 255, 255, 0.7);
+          border-inline-end: 1px solid rgba(255, 255, 255, 0.7);
+}
+.student-grade .grade-list li:last-child {
+  -webkit-padding-end: 0px;
+          padding-inline-end: 0px;
+}
+.student-grade .grade-list li span {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--gray-color);
+  color: rgba(255, 255, 255, 0.7);
+}
+.student-grade .grade-list li span.name {
+  -webkit-margin-end: 3px;
+          margin-inline-end: 3px;
 }
 
 /*modal style*/
@@ -2990,6 +3272,38 @@ ul {
   .table-responsive table td {
     min-width: 105px;
   }
+  .progress-contain .progress-data {
+    flex-direction: column !important;
+    padding: 15px 10px;
+  }
+  .progress-contain .progress-data .week-list {
+    flex-wrap: wrap;
+  }
+  .progress-contain .progress-data .week-list li {
+    margin-bottom: 10px;
+  }
+  .progress-contain .progress-data .week-list li:last-child {
+    -webkit-margin-end: 10px;
+            margin-inline-end: 10px;
+  }
+  .progress-contain .progress-data .week-list li a {
+    width: 140px !important;
+  }
+  .progress-contain .progress-data::after {
+    transform: rotate(180deg) !important;
+  }
+  .progress-contain .progress-data .button-list {
+    width: 100% !important;
+  }
+  .progress-contain .progress-data .button-list:first-child {
+    margin-bottom: 30px !important;
+  }
+  .progress-contain .progress-data .button-list:last-child {
+    margin-top: 30px !important;
+  }
+  .progress-contain .progress-data .week-list.blue-color li a {
+    width: 140px !important;
+  }
 }
 @media (max-width: 500px) {
   .absence .flex-data {
@@ -3003,21 +3317,6 @@ ul {
   }
   .absence th {
     min-width: 140px !important;
-  }
-  .progress-contain .progress-data {
-    flex-direction: column !important;
-  }
-  .progress-contain .progress-data::after {
-    transform: rotate(180deg) !important;
-  }
-  .progress-contain .progress-data .button-list {
-    width: 100% !important;
-  }
-  .progress-contain .progress-data .button-list:first-child {
-    margin-bottom: 30px !important;
-  }
-  .progress-contain .progress-data .button-list:last-child {
-    margin-top: 30px !important;
   }
   .modal-dialog {
     max-width: 100% !important;
@@ -3061,5 +3360,14 @@ ul {
   }
   .modal-dialog .total-amount .flex-price .contain {
     margin: 0px !important;
+  }
+  .grades .filter-colors {
+    flex-wrap: wrap !important;
+  }
+  .grades .filter-colors li {
+    margin-bottom: 10px;
+  }
+  .grades .filter-colors li span {
+    font-size: 12px !important;
   }
 }/*# sourceMappingURL=style.css.map */

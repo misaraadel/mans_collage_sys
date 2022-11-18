@@ -178,6 +178,47 @@
       }
     }
   }
+
+  .progress-contain .progress-data {
+    flex-direction: column !important;
+    padding: 15px 10px;
+
+    .week-list {
+      flex-wrap: wrap;
+
+      li {
+        margin-bottom: 10px;
+
+        &:last-child {
+          margin-inline-end: 10px;
+        }
+
+        a {
+          width: 140px !important;
+        }
+      }
+    }
+
+    &::after {
+      transform: rotate(180deg) !important;
+    }
+    
+    .button-list {
+      width: 100% !important;
+
+      &:first-child {
+        margin-bottom: 30px !important;
+      }
+
+      &:last-child {
+        margin-top: 30px !important;
+      }
+    }
+  }
+
+  .progress-contain .progress-data .week-list.blue-color li a {
+    width: 140px !important;
+  }
 }
 
 @media (max-width: 500px) {
@@ -195,26 +236,6 @@
 
     th {
       min-width: 140px !important;
-    }
-  }
-
-  .progress-contain .progress-data {
-    flex-direction: column !important;
-
-    &::after {
-      transform: rotate(180deg) !important;
-    }
-    
-    .button-list {
-      width: 100% !important;
-
-      &:first-child {
-        margin-bottom: 30px !important;
-      }
-
-      &:last-child {
-        margin-top: 30px !important;
-      }
     }
   }
 
@@ -265,6 +286,18 @@
         .contain {
           margin: 0px !important;
         }
+      }
+    }
+  }
+
+  .grades .filter-colors {
+    flex-wrap: wrap !important;
+
+    li {
+      margin-bottom: 10px;
+
+      span {
+        font-size: 12px !important;
       }
     }
   }
