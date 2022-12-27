@@ -2542,9 +2542,19 @@ ul {
 .subjects .subject-box {
   width: 100%;
   padding: 22px 24px;
+  display: flex;
+  flex-direction: column;
   background-color: var(--light-color);
   border-radius: 10px;
   transition: all 0.3s linear;
+}
+.subjects .subject-box .subject-icon {
+  width: 30px;
+  height: 30px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  filter: var(--primary-filter);
+  margin: 0px auto 20px;
 }
 .subjects .subject-box h2 {
   font-size: 18px;
